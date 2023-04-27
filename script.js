@@ -1,8 +1,8 @@
 let myArray = ["rock", "paper", "scissor"];
 
-
 let computerCount = 0;
 let playerCount = 0;
+let playerSelection;
 
 function getComputerChoice(){
     return myArray[Math.floor(Math.random() * 3)]
@@ -19,24 +19,17 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-function game(){
-    let run = true;
-    while (run) {
-        let playerSelection = prompt("Rock, Paper, or Scissor");
-        playerSelection = playerSelection.toLowerCase();
-        let computerSelection = getComputerChoice();
-        console.log(computerSelection);
-        playRound(playerSelection, computerSelection);
-        if (computerCount == 3) {
-            return "Bot win"
-        }
-
-        if (playerCount == 3) {
-            return "Player win"
-        }
-    }
+function choice(playerChoice) {
+    playerSelection = playerChoice;
+    console.log("rock");
 }
 
+const rockBtn = document.getElementById("rockbtn");
+const paperBtn = document.getElementById("paperbtn");
+const scissorBtn = document.getElementById("scissorbtn");
 
-console.log(game());
+rockBtn.addEventListener("click", () => choice("rock"));
+paperBtn.addEventListener("click", () => choice("paper"));
+scissorBtn.addEventListener("click", () => choice("scissor"));
+
 

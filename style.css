@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: pixel;
+    background-color: #e69597;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    background-color: aliceblue;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 40px;
+}
+
+.player-score, .computer-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.image {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.image img, .image-que img {
+    width: 60px;
+    height: auto;
+}
+
+.rockButton, .paperButton, .scissorButton {
+    background-color: antiquewhite;
+    border-radius: 4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("./Font/Fipps-Regular.otf");
+    }
