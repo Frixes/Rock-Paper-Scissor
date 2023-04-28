@@ -9,26 +9,26 @@
     </head>
 
     <body>
-        <div class="header">  <h1>Rock Paper Scissor</h1> </div>
+        <div class="header">  <h1>ROCK PAPER SCISSOR</h1> </div>
         <div class="main">
             <div class="info">
                 <h2> Choose your weapon </h2>
-                <h3> First to score 5 wins </h3>
+                <h3 id="win-msg"> First to score 5 wins </h3>
             </div>
             <div class="score-container">
                 <div class="player-score">
-                    <div class="image-que"> <img src="./Image/question.png" alt=""></div>
-                    <div>Player Score</div>
+                    <div class="image-que"> <img id="player-img" src="./Image/question.png" alt=""></div>
+                    <div id="player-scr">player score :</div>
                 </div>
                 <div class="computer-score">
-                    <div class="image-que"> <img src="./Image/question.png" alt=""></div>
-                    <div>Computer Score</div>
+                    <div class="image-que"> <img id="comp-img" src="./Image/question.png" alt=""></div>
+                    <div id="comp-scr">computer score :</div>
                 </div>
             </div>
             <div class="image-container">
-                <button class="rockButton" id="rockbtn"><div class="image"><img src="./Image/rock.png" alt=""></div></button>
-                <button class="paperButton" id="paperbtn"><div class="image"><img src="./Image/paper.png" alt=""></div></button>
-                <button class="scissorButton" id="scissorbtn"><div class="image"><img src="./Image/scissor.png" alt=""></div></button>
+                <button class="rockButton" id="rockbtn"><div class="image" id="rock-img"><img src="./Image/rock.png" alt=""></div></button>
+                <button class="paperButton" id="paperbtn"><div class="image" id="paper-img"><img src="./Image/paper.png" alt=""></div></button>
+                <button class="scissorButton" id="scissorbtn"><div class="image" id="scissor-img"><img src="./Image/scissor.png" alt=""></div></button>
             </div>
         </div>
         <div class="footer">
